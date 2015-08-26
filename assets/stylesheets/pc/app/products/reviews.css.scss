@@ -84,6 +84,9 @@ body.products.reviews, #review-edit-form {
         position: absolute;
         top: 0;
         right: 110px;
+        .data {
+          font-size: 11px;
+        }
       }
 
       &.score {

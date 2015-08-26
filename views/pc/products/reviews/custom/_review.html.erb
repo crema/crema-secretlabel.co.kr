@@ -10,12 +10,11 @@
       </div>
       <div class="col author">
         <%= review_user_display_name(review) %>
-        <%= review.created_at.strftime("%Y/%m/%d") %><
+        <span class="date"><%= review.created_at.strftime("%Y/%m/%d") %></span>
       </div>
       <div class="col score">
         <div class="star-rating-container">
-          <% (1..5).each do |i| %>
-          <% end %>
+          <%= render 'reviews/star_rating', score: review.score %>
         </div>
       </div>
       <div class="review-content-expanded"></div>
