@@ -10,7 +10,7 @@
       </div>
       <div class="col author">
         <%= review_user_display_name(review) %>
-        <span class="date"><%= review.created_at.strftime("%Y/%m/%d") %></span>
+        <div><%= review.created_at.strftime("%Y/%m/%d") %></div>
       </div>
       <div class="col score">
         <div class="star-rating-container">

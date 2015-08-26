@@ -84,7 +84,8 @@ body.products.reviews, #review-edit-form {
         position: absolute;
         top: 0;
         right: 110px;
-        .data {
+        
+        div {
           font-size: 11px;
         }
       }
@@ -127,6 +128,7 @@ body.products.reviews, #review-edit-form {
     .star-rating-container span {
       vertical-align: middle;
       margin-top: 5px;
+      margin-left: 2px;
     }
 
     .sprites-icon-file {
