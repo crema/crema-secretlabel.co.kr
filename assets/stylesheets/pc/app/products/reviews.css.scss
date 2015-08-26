@@ -22,7 +22,7 @@ body.products.reviews, #review-edit-form {
 
         .review-options-search {
           margin-top: 8px;
-          top: -34px;
+          top: 25px;
         }
       }
     }
@@ -64,6 +64,15 @@ body.products.reviews, #review-edit-form {
         top: 0;
         left: 82px;
       }
+      
+      &.photo .sprites-camera{
+        width: 27px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        top: 11px;
+        left: 4px;
+      }
 
       &.title {
         display: block;
@@ -84,9 +93,11 @@ body.products.reviews, #review-edit-form {
         position: absolute;
         top: 0;
         right: 110px;
+        margin-top: -5px;
         
         div {
           font-size: 11px;
+          margin-top: -28px;          
         }
       }
 
