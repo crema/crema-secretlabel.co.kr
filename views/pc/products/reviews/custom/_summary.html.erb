@@ -5,7 +5,7 @@
 %>
 <div class="score-summary">
   <div id="review-photo-thumbnails">
-    <div class="title">YOUR <strong># CHUUSTYLE</strong></div>
+    <div class="title">SECRETLABEL</div>
     <div id="review-photo-summary">
       <div class="count-text"><span class="count"><%= product.photo_reviews_count %></span>개의 포토리뷰가 있습니다.</div>
     </div>
@@ -23,8 +23,8 @@
         %>
         <li class="photo-review-thumbnail">
           <%= content_tag :a, data: link_data, class: link_class do %>
-            <%= image_tag image.url(:thumbnail), class: 'smooth review-image', alt: image.model.title, width: 63, height: 63 %>
-            <%= image_tag image.url(:thumbnail), class: 'smooth grayscale', alt: image.model.title, width: 63, height: 63 %>
+            <%= image_tag image.url(:thumbnail), class: 'smooth review-image', alt: image.model.title, width: 75, height: 75 %>
+            <%= image_tag image.url(:thumbnail), class: 'smooth grayscale', alt: image.model.title, width: 75, height: 75 %>
           <% end %>
         </li>
       <% end %>

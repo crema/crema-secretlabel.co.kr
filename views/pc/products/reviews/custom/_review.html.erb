@@ -8,12 +8,13 @@
         <%= content_tag :a, review.message.first_line(Settings.max_review_chars_per_line).html_safe, class: 'link-expand' %>
         <%= "[#{review.comments_count}]" if review.comments_count > 0 %>
       </div>
-      <div class="col author"><%= review_user_display_name(review) %></div>
+      <div class="col author">
+        <%= review_user_display_name(review) %>
+        <div><%= review.created_at.strftime("%Y/%m/%d") %></div>
+      </div>
       <div class="col score">
         <div class="star-rating-container">
-          <% (1..5).each do |i| %>
-            <%= content_tag :span, nil, class: "#{review.score && i > review.score ? 'sprites-star-empty' : 'sprites-star-full'}" %>
-          <% end %>
+          <%= render 'reviews/star_rating', score: review.score %>
         </div>
       </div>
       <div class="review-content-expanded"></div>
