@@ -9,20 +9,24 @@ body.products.reviews {
 
 body.products.reviews, #review-edit-form {
   .widget {
-    &.new-review {
-    }
-
     &.widget-reviews {
       padding-top: 38px;
 
       .widget-heading {
+        position: relative;
         height: 21px;
         border-bottom: 0;
         margin-bottom: 40px;
 
         .review-options-search {
-          margin-top: 8px;
-          top: 25px;
+          top: 24px;
+          position: absolute;
+          right: 0;
+          width: 50%;
+        }
+        
+        .sort_type_box {
+          padding-top: 29px;
         }
       }
     }
@@ -65,7 +69,7 @@ body.products.reviews, #review-edit-form {
         left: 93px;
       }
       
-      &.photo .sprites-camera{
+      &.photo .sprites-camera {
         width: 27px;
         height: 21px;
         display: block;
